@@ -1,0 +1,31 @@
+<html>
+    <head> 
+       <link rel="stylesheet" href="02-signup.css">
+    </head>
+    <body>
+        <h1 style="color:coral">회원가입</h1>
+        <input type="text" placeholder="이메일을 입력해 주세요."/><br /><br />
+        <input type="text" placeholder="이름을 입력해 주세요."/><br /><br />
+        <input class="aaa" type="password" placeholder="비밀번호를 입력해 주세요."/><br /><br />
+        <input id="qqq" class="aaa" type="password" placeholder="비밀번호를 다시 입력해 주세요."/><br /><br/>
+
+        <select> <!-- 종속 태그 > option -->
+            <option selected disabled>지역을 선택하세요.</option> <!-- selected는 처음에 보여질 수 있도록 하는 기능, disabled는 선택할 수 없도록 만드는 기능-->
+            <option>서울</option>
+            <option>인천</option>
+            <option>경기</option>
+
+        </select><br /><br/>
+
+        <input type="radio" name="s"/>여성 <!--그룹 이름을 갖게 하면 그룹 중에서 한 가지만 선택할 수 있음.-->
+        <input type="radio" name="s"/>남성 <br /><br/>
+
+        <input type="checkbox" /> 이용약관 개인정보 수집 및 이용, 마케팅 활용 
+        <hr />
+        <button>가입하기</button> <!-- input type으로도 만들 수 있음./button 태그를 주로 많이 사용함. -->
+        <!-- <input type="button" value="가입하기" /> -->
+        <!-- 주석을 사용하는 이유
+            1. 브라우저에서 숨기고 싶은 코드가 있을 때
+            2. 다른 사람과 사용할 때 용이할 수 있도록 -->
+    </body>
+</html>

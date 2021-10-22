@@ -1,0 +1,15 @@
+/* 1.태그 내부에 style 태그 
+2. hede안에 style 태그 
+3. css 파일을 만들어서 불러오기 -> 유지보수를 위해서 주로 사용됨. */
+
+input{
+    background-color: rgb(255, 239, 93);
+}
+
+.aaa{
+    background-color: skyblue;
+}
+
+#qqq{
+    background-color: green;
+}

@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper__title{
+    font-weight: bold;
+}
+.wrapper{
+    width: 320px;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.wrapper__id{
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper__id input{
+    width: 250px;
+    height: 35px;
+}
+
+.wrapper__phone input{
+    height: 35px;
+}
+
+.wrapper__confirm{
+    width: 250px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper__confirm button{
+    width: 170px;
+    height: 35px;
+}
+
+.wrapper__confirm__number{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper__confirm__check{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper__confirm input{
+    text-align: center;
+}
+
+select{
+    width: 250px;
+    height: 35px;
+}
+
+.check_s{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.line{
+    width: 80%;
+    border: 0.2px solid #999999;
+}
+
+button{
+    width: 250px;
+    height: 35px;
+    cursor: pointer;
+}

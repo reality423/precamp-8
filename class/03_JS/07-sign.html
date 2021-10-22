@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>이벤트 감지</title>
+    <script>
+        function checkValidation(){
+            const email = document.getElementById("email").value
+            const password1 = document.getElementById("password1").value
+            const password2 = document.getElementById("password2").value
+
+            if(email !== "" && password1 !== ""  && password2 !== ""){
+                document.getElementById("mybutton").setAttribute("style",'background-color: yellow')
+            } else{
+                /* document.getElementById("mybutton").removeAttribute("style") */
+                document.getElementById("mybutton").setAttribute("style",'background-color: none')
+            }
+        }
+    </script>
+</head>
+<body>
+    <input id="email" type="text" placeholder="이메일을 입력해주세요."  oninput="checkValidation()" />
+    <input id="password1" type="password" placeholder="비밀번호를 입력해주세요." oninput="checkValidation()" />
+    <input id ="password2" type="password" placeholder="비밀번호를 확인해주세요." oninput="checkValidation()"/>
+    <button id="mybutton">회원가입</button>
+
+    <!-- onchange="function()" 변경이 일어나면(조건을 충족하면) 기능(함수)을 실행시킴. -->
+    <!-- onchange="aaa()" onkeyup="onchange()"    ->  oninput="aaa()" 같은 의미 -->
+    <!-- oninput="aaa()" 모든 칸에 적용하기 위해서 3번 써주어야 함. -->
+    <!-- removeAttribute 기존에 주었던 속성 삭제 -->
+</body>
+</html>

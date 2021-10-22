@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <title>박스모델 연습</title>
+    <style>
+        .item {
+            background-color: coral;
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            border: 3px solid black;
+            box-sizing: border-box; /* default값이 contents-box 이기 때문에 */
+            padding: 30px;
+        } 
+       
+        .wrapper {
+            margin: 20px 0;
+            width: 1000px;
+            height: 1000px;
+            background-color: skyblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+
+        }
+
+        .qqq{
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+            margin: 0px 450px;
+        }
+    </style>
+</head>
+<body>
+    <div class="qqq">Box111</div>
+   <div class="wrapper">
+        <div class="item">BOX</div>
+        <div class="item">BOX</div>
+        <div class="item">BOX</div>
+    </div>
+    <div class="qqq">Box222</div>
+</body>
+</html>
